@@ -100,8 +100,171 @@
                 <div style="text-align: center;">
                 <img src="img/no.png" alt="not" style="width: 505px; height: 175px;">
                 </div></br></br>
+        </article>
+        <article>
+            <h2>Publicacione mas recientes</h2>
+            <h3> 31/08/2024 . Las Compuertas Lógicas: Los Ladrillos de la Computación </h3>
+            <h4>Las Compuertas Lógicas son circuitos electrónicos conformados internamente por transistores 
+                que se encuentran con arreglos especiales con los que otorgan señales de voltaje como resultado 
+                o una salida de forma booleana, están obtenidos por operaciones lógicas binarias (suma, multiplicación). 
+                También niegan, afirman, incluyen o excluyen según sus propiedades lógicas. Estas compuertas se pueden aplicar 
+                en otras áreas de la ciencia como mecánica, hidráulica o neumática.</br></br>
+        
+                Existen diferentes tipos de compuertas y algunas de estas son más complejas, con la posibilidad de ser simuladas por 
+                compuertas más sencillas. Todas estas tienen tablas de verdad que explican los comportamientos en los resultados que otorga, 
+                dependiendo del valor booleano que tenga en cada una de sus entradas.</br></br>
+        
+                <div style="text-align: center;">
+                <img src="img/compuertas.webp" alt="Compuertas" style="width: 150px; height: 150px;">
+                </div></br></br>
+        
+                Trabajan en dos estado, "1" o "0", los cuales pueden asignarse a la lógica positiva o lógica negativa. El estado 1 tiene un 
+                valor de 5v como máximo y el estado 0 tiene un valor de 0v como mínimo y existiendo un umbral entre estos dos estados donde el resultado 
+                puede variar sin saber con exactitud la salida que nos entregara. Las lógicas se explican a continuación:</br>
+                <ul>
+                    <li>La lógica positiva es aquella que con una señal en alto se acciona, representando un 1 binario y con una señal en bajo se desactiva. 
+                        representado un 0 binario.</li>
+                    <li>La lógica negativa proporciona los resultados inversamente, una señal en alto se representa con un 0 binario y una señal en bajo se representa con un 1 binario.
+                    </li>
+                </ul>
+                </br>
+                A continuación vamos a analizar algunas operaciones lógicas una por una de las 3 principales:
+            </h4>
+            <h3>Compuerta lógica AND:</h3> <!--SUBTITULO-->
+            <h4>
+                También puede definirse como una multiplicación Booleana: Si el valor de todas las variables de entrada es 1, entonces el resultado 
+                en la salida será 1 lógico, si por el contrario alguna de las variables de entrada es igual a 0, la salida valdrá 0 lógico.</br></br>
+            </h4>
+                <div style="text-align: center;">
+                <img src="img/and.png" alt="and" style="width: 505px; height: 175px;">
+                </div></br></br>
+        
+            <h3>Compuerta lógica OR:</h3> <!--SUBTITULO-->
+            <h4>También definida como una suma Booleana: Siempre que, al menos una de las entradas tenga un valor igual a 1, la compuerta OR dará como
+                resultado un 1 lógico, pero si todas las variables de entrada tienen el valor 0, la salida será un 0 lógico.
+            </h4>
+                <div style="text-align: center;">
+                <img src="img/or.png" alt="or" style="width: 505px; height: 175px;">
+                </div></br></br>
+        
+            <h3>Compuerta lógica NOT:</h3> <!--SUBTITULO-->
+            <h4>También definida como negación Booleana: Cualquiera que sea el valor en la entrada de la compuerta, 1 o 0, la salida será lo contrario a esta. 
+                Cabe mencionar que solo es posible tener una entrada.
+            </h4>
+                <div style="text-align: center;">
+                <img src="img/no.png" alt="not" style="width: 505px; height: 175px;">
+                </div></br></br>
+        </article>
+        <article>
+            <h3> 26/09/2024 . Tutorial manejo basico de git </h3>
+            
+            <h4>Git es una herramienta fundamental para desarrolladores de software que nos permite gestionar los cambios en nuestro código de manera eficiente. 
+                En este tutorial, te guiaré paso a paso a través de los conceptos básicos de Git, desde la creación de un repositorio local hasta la conexión con 
+                un repositorio remoto en GitHub. luego de descargar git desde su pagina oficial y realizar su instalacion (solo abre el archivo descargado y dale siguiente, siguiente
+            siguiente y asi como cualquier instalacion)</h4>
+            
+            <h1>1. ubicacion o creacion de carpeta del proyecto</h1>
+        
+            <h4>Primero debes crear una carpeta para tu nuevo proyecto o ubicar un proyecto ya creado </h4>
+            <h4>Para saber en que carpeta te encuntras utiliza el comando "ls"</br>
+            y para moverte por las carpetas utiliza el comando "cd" + el nombre de la carpeta</h4>
+        
+            <div style="text-align: center;">
+                <img src="img/ubicar proyecto.jfif" alt="not" style="width: 600px; height: 330px;">
+                </div></br></br>
+            <h1>2. Crear el repositorio de git </h1>
+        
+            <h4>ahora para crear el repositorio git en nuestro proyecto debes utilizar el comando "git init"</h4>
+            <div style="text-align: center;">
+                <img src="img/iniciar repositorio.jfif" alt="not" style="width: 600px; height: 233px;">
+                </div></br></br>
+            <h4>Este comando crea un nuevo directorio oculto llamado .git que contiene toda la información de tu repositorio y te permitira
+                gestionar las versiones y modificaciones de estas.</h4></br></br>
+        
+            <h1>3. Creación de ramas (branches)</h1>
+            <h4>Las ramas son copias independientes de tu proyecto. Esto te permite trabajar en diferentes funcionalidades sin afectar la versión principal, 
+                para reaizar la copia utiliza el comando "git branch + el nombre que desees".</h4>
+            
+                <div style="text-align: center;">
+                    <img src="img/branch.jfif" alt="not" style="width: 600px; height: 233px;">
+                    </div></br></br>
+            <h4>como puedes ver el comando tiene un agregagdo que es el "-b" con esto ademas de crear la rama, te mueve directamente a tu nueva rama creada
+                pero supongamos que solo creaste la rama. Para cambiar a nuestra nueva rama en Git o a cualquier otra rama que hayamos creado anteriormente.
+                podemos hacer uso del comando "git checkout + el nombre de la rama".</h4></br>
+            <h3>¿Cuándo usar ramas?</h3>
+            <ul>
+                <li>Desarrollar nuevas funcionalidades: Crea una nueva rama para cada característica, evitando conflictos con el código principal.</li>
+                <li>Experimentar: Prueba nuevas ideas sin afectar el código estable.</li>
+                <li>Corregir errores: Crea una rama para solucionar un bug específico.</li>
+            </ul></br>
+            
+            <h1>4. Realizar cambios a nuestras ramas (branch)</h1>
+        
+            <h4>ahora puedes abrir tu archivo de proyecto con el comando "code index.html" (debes tener Vscode instalado) y puedes comenzar a trabajar en tu proyecto y git
+                identificara los cambios que realices en la rama como se puede ver en el ejemplo en este caso en la rama "version-editable".</h4>
+            
+                <div style="text-align: center;">
+                    <img src="img/primera edicion.jfif" alt="not" style="width: 575px; height: 293px;">
+                    </div></br></br>
+            <h4>como se ve en la imagen realice cambios a mi documento y utilice el comando "git status" para confirmar que se han realizado cambios en mi proyecto</h4>
+            <h4>ahora, cuando termines de trabajar en tu proyecto podemos agregar las modificaciones con el comando "git add index.html" o "git add ." si agregaste imagenes o archivos de ese tipo</h4>
+                <div style="text-align: center;">
+                    <img src="img/segunda edicion.jfif" alt="not" style="width: 660px; height: 430px;">
+                    </div></br></br>
+        
+            <h1>5.hacer el commit para guardar la version</h1>
+        
+            <h4>ahora para guardar esos cambios al repositorio , es decir guardar la version de los cambios que hicimos utilizaremos el comando "git commit -m "comentario registro de lo que hiciste"
+                esto para tener registrado los cambios que se realizaron, quien los realizo y detalles de los cambios.
+            </h4>
+                <div style="text-align: center;">
+                    <img src="img/commit.jfif" alt="not" style="width: 660px; height: 430px;">
+                    </div></br></br>
+            <h1>6. fusion de la rama creada a la version principal</h1>
+            <h4>ahora ya que estas satisfecho con el trabajo y las modificaciones que realizaste en tu rama, es este caso de ejemplo la rama "version-editable" 
+                que creamos y editamos para no perjudicar la rama principal "main" de nuestro proyecto. vamos a fusionar todos los cambios que realizamos a la rama "version-editable"
+                a nuestra rama principal "main" o "master", utiliza el comando "git checkout + nombre de la rama principal" para cambiar a la rama principal "master" y luego el comando
+                "git merge + nombre de la rama secundaria de donde se traeran los cambios" en este caso "version-editable" como se muestra en el ejemplo
+            </h4>
+                <div style="text-align: center;">
+                    <img src="img/merge.jfif" alt="not" style="width: 660px; height: 430px;">
+                    </div></br></br>
+
+            <h4>y asi ya haz aprendido a utilizar git , gestionar tus versiones y sobreescribir tus proyectos principales basado en ediciones de resplado para no perjudicar tu proyecto principal </h4>
+            </br>
+
+            <h1>Como conectar tu repositorio local a uno remoto de Github</h1>
+            
+            <h4>Primero deberas crear una cuenta en GitHub y crear un nuevo repositorio, cuando crees el nuevo repositorio colocale un nombre , si quieres una descripcion y deja las demas opciones por defecto</h4>
+                <div style="text-align: center;">
+                    <img src="img/repositorio.jfif" alt="not" style="width: 660px; height: 430px;">
+                    </div></br></br>
+
+            <h4>luego vas a la opcion codigo para conseguir el link de tu repositorio lo necesitaras para conectar tu git</h4>
+
+                <div style="text-align: center;">
+                    <img src="img/link.jfif" alt="not" style="width: 660px; height: 430px;">
+                    </div></br></br>
+            
+            <h4>ahora desde git vas a conectarte a github con el siguiente comando "git remote origin + el link de tu repositorio" que copiaste anteriormente</h4>
+
+                <div style="text-align: center;">
+                    <img src="img/agregar repositorio.jfif" alt="not" style="width: 890px; height: 360px;">
+                    </div></br></br>
+
+            <h4>despues de conectar tu repositorio ahora vamos a subir la version local de nuestro proyecto a github con el siguiente comando 
+                "git push -u origin master" y asi subiras tu trabajo a github
+            </h4>
+                <div style="text-align: center;">
+                    <img src="img/subir a github.jfif" alt="not" style="width: 660px; height: 430px;">
+                    </div></br></br>
+
+            <h4> y listo ya subiste tu trabajo a github y podras verlo en tu repositorio </h4>
+
 
         </article>
+
         </div>
 </body>
 </html>
+
